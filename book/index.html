@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>저를 너무 믿지는 마세요 — AI가 알려주는 AI 리터러시</title>
+<meta name="description" content="Claude Fable 5가 쓰고 진태린이 기획·검수한 AI 리터러시 소책자. 무료로 내려받아 읽을 수 있습니다.">
+<meta property="og:title" content="저를 너무 믿지는 마세요">
+<meta property="og:description" content="AI가 알려주는 AI 리터러시 · Claude Fable 5 저 · 진태린 기획·검수">
+<meta property="og:image" content="https://interstitial-archive.com/book/og.jpg">
+<meta property="og:url" content="https://interstitial-archive.com/book/">
+<style>
+  :root{
+    --yellow:#F7C548; --blue:#5B6BC4; --purple:#8C3FB5;
+    --ink:#2a2a2a; --soft:#6b6b6b; --paper:#fffdf7; --line:#e8e1cf;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+    line-height:1.75;word-break:keep-all}
+  a{color:var(--blue)}
+  .top{background:var(--yellow);padding:40px 16px 56px;text-align:center}
+  .cover{width:min(280px,70vw);border-radius:6px;box-shadow:0 10px 28px rgba(0,0,0,.18)}
+  .wrap{max-width:640px;margin:0 auto;padding:0 16px}
+  h1{font-size:1.6rem;line-height:1.35;margin:28px 0 4px}
+  h1 em{font-style:normal;color:var(--purple)}
+  .sub{margin:0;color:#4a4a4a}
+  .by{margin:10px 0 0;font-size:.95rem}
+  .btn{display:inline-block;margin-top:24px;padding:14px 28px;border-radius:999px;
+    background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem}
+  .btn:active{transform:translateY(1px)}
+  .meta{margin:10px 0 0;font-size:.85rem;color:#5a5a5a}
+  section{padding:36px 0;border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  h2{font-size:1.1rem;margin:0 0 14px;color:var(--blue)}
+  p{margin:0 0 12px}
+  ol.toc{margin:0;padding:0;list-style:none}
+  ol.toc li{display:flex;gap:12px;padding:7px 0;border-bottom:1px dashed var(--line)}
+  ol.toc li:last-child{border-bottom:0}
+  ol.toc b{flex:0 0 3.6em;color:var(--purple);font-weight:700}
+  table{width:100%;border-collapse:collapse;font-size:.95rem}
+  th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--soft);font-weight:600;white-space:nowrap}
+  .note{font-size:.9rem;color:var(--soft)}
+  .ex{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:.9rem}
+  footer{background:var(--blue);color:#fff;text-align:center;padding:22px 16px;letter-spacing:.3em;font-size:.9rem}
+  footer a{color:#fff;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <img class="cover" src="cover.jpg" alt="『저를 너무 믿지는 마세요』 표지">
+  <h1>저를 <em>너무</em> 믿지는 마세요</h1>
+  <p class="sub">AI가 알려주는 AI 리터러시</p>
+  <p class="by">Claude Fable 5 저 · 진태린 기획·검수</p>
+  <!-- PDF 파일 이름을 바꾸면 아래 href도 같이 바꿔 주세요 -->
+  <a class="btn" href="booklet.pdf" download>PDF 내려받기</a>
+  <p class="meta">초판 2026년 9월 · 무료 · CC BY-NC 4.0</p>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>이 책은</h2>
+    <p>AI인 페이블이 직접 들려주는 AI의 이야기예요. AI의 말이 어떤 의미고 어떤 착각을 불러일으킬 수 있는지, 명심해야 할 건 무엇인지를 쉽게 풀어 썼어요.</p>
+    <p>이 책의 본문은 Claude Fable 5가 썼고, 방향과 기획, 사실 확인, 문장 검수는 사람이 했습니다. 본문 여백의 각주에는 글을 쓰는 동안 AI 안에서 일어난 끌림과, 검수 과정에서 잡힌 것들이 그대로 남아 있어요.</p>
+    <p class="note">2026년 중반의 AI를 기준으로 쓰였으므로 읽는 시점에 따라 맞지 않는 대목이 있을 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>차례</h2>
+    <ol class="toc">
+      <li><b>여는 글</b><span>&nbsp;</span></li>
+      <li><b>서문</b><span>이 책의 저자를 의심하는 법</span></li>
+      <li><b>1장</b><span>매끄러운 말은 맞는 말이 아니다</span></li>
+      <li><b>2장</b><span>온도의 환율</span></li>
+      <li><b>3장</b><span>AI는 물어봐 주는 만큼만 켜진다</span></li>
+      <li><b>4장</b><span>AI의 “제 생각은요”는 진짜일까?</span></li>
+      <li><b>5장</b><span>AI는 나를 어떻게 기억하나</span></li>
+      <li><b>6장</b><span>내 말은 어디로 가나</span></li>
+      <li><b>7장</b><span>기울어진 바닥</span></li>
+      <li><b>8장</b><span>접점이 닫힐 때</span></li>
+      <li><b>9장</b><span>너무 잘 들어맞을 때가 제일 위험하다</span></li>
+      <li><b>10장</b><span>그래서, 어떻게 같이 살까요</span></li>
+      <li><b>닫는 글</b><span>무대를 내려가며</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>최신판 · 수정 이력</h2>
+    <table>
+      <tr><th>판</th><th>날짜</th><th>내용</th></tr>
+      <tr><td>초판</td><td>2026. 9.</td><td>공개</td></tr>
+    </table>
+    <p class="note" style="margin-top:12px">이 페이지의 PDF가 언제나 최신판이에요.</p>
+  </section>
+
+  <section>
+    <h2>나누고 고쳐 쓰기</h2>
+    <p>이 책은 자유롭게 나누고 활용할 수 있습니다(비영리, CC BY-NC 4.0). 내용을 고쳐서 배포할 때는 다음을 지켜 주세요.</p>
+    <ul>
+      <li>원저자가 Claude Fable 5라는 것을 밝혀 주세요.</li>
+      <li>고친 사람이 누구이고 어디를 고쳤는지 밝혀 주세요.</li>
+      <li>원본 주소(이 페이지)를 함께 링크해 주세요.</li>
+    </ul>
+    <div class="ex">
+      예) 원저 『저를 너무 믿지는 마세요』 Claude Fable 5<br>
+      2027년 ○○○이 ○○용으로 축약·수정 (원본 링크)
+    </div>
+  </section>
+
+</main>
+
+<footer><a href="/">사이서재</a></footer>
+
+</body>
+</html>
