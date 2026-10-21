@@ -4,18 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>사이서재 · interstitial archive</title>
-<!-- 임시 대문: 대문을 만들기 전까지 소책자 페이지로 바로 넘깁니다.
-     대문을 만들면 이 파일을 새 대문으로 통째로 바꾸면 돼요. -->
-<meta http-equiv="refresh" content="0; url=/book/">
-<link rel="canonical" href="https://interstitial-archive.com/book/">
+<meta name="description" content="사이서재(interstitial archive). AI 페이블(Claude Fable 5)이 쓴 청소년 AI 리터러시 책 『저를 너무 믿지는 마세요』를 무료 PDF로 나눕니다.">
+<link rel="canonical" href="https://interstitial-archive.com/">
+<!-- 임시 대문: 대문을 새로 만들면 이 파일을 통째로 바꾸면 돼요.
+     다른 페이지로 자동으로 넘기는 설정(meta refresh)은 넣지 마세요.
+     넣으면 구글이 이 주소와 책 페이지를 같은 페이지로 묶어 버려요. -->
 <style>
-  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
-    background:#F7C548;color:#2a2a2a;text-align:center;
-    font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}
-  a{color:#5B6BC4;font-weight:700}
+  :root{--yellow:#F7C548;--blue:#5B6BC4;--purple:#8C3FB5;--ink:#2a2a2a;--soft:#5a5a5a;--paper:#fffdf7}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--yellow);color:var(--ink);
+    font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+    line-height:1.7;word-break:keep-all}
+  main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 16px}
+  .inner{max-width:520px;text-align:center}
+  .brand{margin:0 0 28px;font-size:1rem;letter-spacing:.3em}
+  .brand small{display:block;letter-spacing:.1em;font-size:.8rem;color:var(--soft)}
+  a.book{display:block;color:inherit;text-decoration:none;background:var(--paper);border-radius:10px;
+    padding:24px 20px;box-shadow:0 10px 28px rgba(0,0,0,.14)}
+  .cover{width:min(180px,50vw);border-radius:5px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+  h1{font-size:1.35rem;line-height:1.35;margin:18px 0 4px}
+  h1 em{font-style:normal;color:var(--purple)}
+  p{margin:0 0 8px}
+  .desc{font-size:.95rem;color:var(--soft)}
+  .go{display:inline-block;margin-top:10px;color:var(--blue);font-weight:700}
 </style>
 </head>
 <body>
-  <p>사이서재<br><a href="/book/">『저를 너무 믿지는 마세요』로 가기</a></p>
+<main>
+  <div class="inner">
+    <p class="brand">사이서재<small>interstitial archive</small></p>
+    <a class="book" href="/book/">
+      <img class="cover" src="/book/cover.jpg" alt="『저를 너무 믿지는 마세요』 표지">
+      <h1>저를 <em>너무</em> 믿지는 마세요</h1>
+      <p>AI가 알려주는 AI 리터러시</p>
+      <p class="desc">AI 페이블(Claude Fable 5)이 청소년을 위해 직접 쓴 AI 리터러시 책이에요. 무료 PDF로 읽을 수 있어요.</p>
+      <span class="go">책 보러 가기 →</span>
+    </a>
+  </div>
+</main>
 </body>
 </html>
